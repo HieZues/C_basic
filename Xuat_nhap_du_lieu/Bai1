@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+	float x;
+	printf ("nhap vao so x: ");
+	scanf ("%f", &x);
+	printf ("x^2 = %f\n", x*x);
+	printf ("x^3 = %f\n", x*x*x);
+	printf ("x^4 = %f\n", x*x*x*x);
+	return 0;
+}
