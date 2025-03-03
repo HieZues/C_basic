@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main (){
+	int dd, mm, yy;
+	printf ("nhap vao dd: ");
+	scanf ("%d", &dd);
+	printf ("nhap vao mm: ");
+	scanf ("%d", &mm);
+	printf ("nhap vao yy: ");
+	scanf ("%d", &yy);
+	printf ("hom nay la: %d/%d/%d", dd, mm, yy);
+	}
