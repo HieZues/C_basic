@@ -1,0 +1,24 @@
+// giai he phuong trinh bac nhat 2 an: ax + by = c
+//                                     dx + ey = f
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+	// khai bao
+	float a, b, c, d, e, f, D, D1, D2;
+	// nhap du lieu
+	printf ("nhap vao he so a, b, c, d, e, f: ");
+	scanf ("%f%f%f%f%f%f", &a, &b, &c, &d ,  &e, &f);
+	// tinh theo dinh thuc cramer
+	D = a*e - b*d;
+	D1 = b*f - c*e;
+	D2 = c*d - a*f;
+	if (D!= 0) {
+		printf ("phuong trinh co nghiem la: %f, %f", D1/D, D2/D);
+	} if (D == 0) {
+        if (D1 == 0 && D2 == 0)
+            printf(" phuong trinh vo so nghiem\n");
+        else
+            printf(" phuong trinh vo nghiem\n");
+}
+}
